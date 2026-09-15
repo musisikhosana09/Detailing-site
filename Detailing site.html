@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Shine Detailing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background: #111;
+            color: #fff;
+        }
+
+        header {
+            background: #000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #f5c518;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #f5c518;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1607860108855-64acf2078ed9') no-repeat center/cover;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            background: rgba(0,0,0,0.6);
+            padding: 20px;
+        }
+
+        section {
+            padding: 40px;
+        }
+
+        .services {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1 1 250px;
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #f5c518;
+            margin-bottom: 10px;
+        }
+
+        form {
+            max-width: 500px;
+            margin: auto;
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        form button {
+            width: 100%;
+            padding: 12px;
+            background: #f5c518;
+            border: none;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background: #d4a911;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #000;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Elite Shine Detailing</h1>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#booking">Book Now</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h2>Premium Car Detailing Services</h2>
+</div>
+
+<section id="services">
+    <h2 style="text-align:center; margin-bottom:20px;">Our Services</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Exterior Wash</h3>
+            <p>Full body wash, wax & polish for a showroom shine.</p>
+        </div>
+        <div class="card">
+            <h3>Interior Cleaning</h3>
+            <p>Deep vacuum, dashboard polish, and seat cleaning.</p>
+        </div>
+        <div class="card">
+            <h3>Full Detail</h3>
+            <p>Complete inside & outside detailing package.</p>
+        </div>
+    </div>
+</section>
+
+<section id="booking">
+    <h2 style="text-align:center; margin-bottom:20px;">Book a Service</h2>
+    <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="tel" placeholder="Phone Number" required>
+
+        <select required>
+            <option value="">Select Service</option>
+            <option>Exterior Wash</option>
+            <option>Interior Cleaning</option>
+            <option>Full Detail</option>
+        </select>
+
+        <input type="date" required>
+        <textarea rows="4" placeholder="Additional Notes"></textarea>
+
+        <button type="submit">Book Now</button>
+    </form>
+</section>
+
+<section id="contact">
+    <h2 style="text-align:center;">Contact Us</h2>
+    <p style="text-align:center; margin-top:10px;">
+        📍 Durban, South Africa <br>
+        📞 012 345 6789 <br>
+        ✉️ info@eliteshine.co.za
+    </p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Elite Shine Detailing. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
